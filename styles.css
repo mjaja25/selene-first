@@ -2,12 +2,12 @@
 :root{
   --bone:#F2EDE3;
   --cream:#FAF7F0;
-  --espresso:#1D1610;
-  --espresso-2:#2A211A;
+  --espresso:#0D0D0D;
+  --espresso-2:#1A1A1A;
   --gold:#B08D57;
   --gold-lt:#C9A66B;
-  --taupe:#8B7F6E;
-  --line:rgba(29,22,16,.14);
+  --taupe:#666666;
+  --line:rgba(13,13,13,.12);
   --serif:'Cormorant Garamond', Georgia, serif;
   --sans:'Jost', 'Helvetica Neue', sans-serif;
   --script:'Parisienne', cursive;
@@ -149,7 +149,7 @@ em{font-style:italic;font-weight:400}
 .card:hover .card-media img{transform:scale(1.06)}
 .card-add{
   position:absolute;left:0;right:0;bottom:0;
-  background:rgba(29,22,16,.92);color:var(--cream);
+  background:rgba(13,13,13,.95);color:var(--cream);
   padding:.95rem;font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;
   transform:translateY(100%);transition:transform .4s ease;
 }
@@ -211,7 +211,7 @@ em{font-style:italic;font-weight:400}
   position:absolute;left:0;bottom:0;right:0;
   padding:1.6rem 1.1rem .9rem;color:var(--cream);
   font-family:var(--serif);font-style:italic;font-size:1.15rem;
-  background:linear-gradient(transparent,rgba(29,22,16,.72));
+  background:linear-gradient(transparent,rgba(13,13,13,.75));
   opacity:0;transform:translateY(8px);transition:.4s ease;
 }
 .lb-grid figure:hover figcaption{opacity:1;transform:none}
@@ -338,7 +338,7 @@ body.lock{overflow:hidden}
 .nav-ic:hover{color:var(--gold)}
 .nav-wish .bag-count{background:var(--gold)}
 .scrim{
-  position:fixed;inset:0;background:rgba(29,22,16,.55);backdrop-filter:blur(3px);
+  position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(3px);
   opacity:0;visibility:hidden;transition:.4s ease;z-index:75;
 }
 .scrim.on{opacity:1;visibility:visible}
@@ -349,7 +349,7 @@ body.lock{overflow:hidden}
   position:fixed;top:0;right:0;bottom:0;width:min(430px,92vw);
   background:var(--cream);z-index:80;display:flex;flex-direction:column;
   transform:translateX(100%);transition:transform .5s cubic-bezier(.3,.8,.25,1);
-  box-shadow:-20px 0 60px rgba(29,22,16,.14);
+  box-shadow:-20px 0 60px rgba(0,0,0,.15);
 }
 .drawer.open{transform:none}
 .drawer-head{
@@ -394,7 +394,7 @@ body.lock{overflow:hidden}
   flex:1;border:none;background:transparent;outline:none;
   font-family:var(--serif);font-size:clamp(1.6rem,4vw,2.6rem);color:var(--espresso);
 }
-.search-bar input::placeholder{color:rgba(29,22,16,.3)}
+.search-bar input::placeholder{color:rgba(13,13,13,.35)}
 .search-sugs{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-top:1.4rem}
 .sug-label{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--taupe);margin-right:.4rem}
 .sug{padding:.5rem 1.1rem;border:1px solid var(--line);border-radius:999px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;transition:.3s}
@@ -438,7 +438,7 @@ body.lock{overflow:hidden}
 .card-rate{display:flex;align-items:center;gap:.4rem;margin-top:.15rem}
 .card-rate span{font-size:.7rem;color:var(--taupe)}
 .stars{display:inline-flex;gap:1px;font-size:.72rem;letter-spacing:0}
-.stars i{color:rgba(29,22,16,.22);font-style:normal}
+.stars i{color:rgba(13,13,13,.2);font-style:normal}
 .stars i.on{color:var(--gold)}
 .price s{color:var(--taupe);font-size:.9rem;margin-left:.5rem;text-decoration-color:rgba(139,127,110,.6)}
 .card-sm .card-info h3{font-size:1.1rem}
@@ -482,7 +482,7 @@ body.lock{overflow:hidden}
 
 .steps{
   list-style:none;display:flex;justify-content:center;gap:1.4rem;margin-top:2rem;
-  font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(29,22,16,.35);
+  font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(13,13,13,.35);
 }
 .steps li{display:flex;align-items:center;gap:.5rem}
 .steps li::after{content:"";width:26px;height:1px;background:var(--line)}
@@ -569,7 +569,7 @@ body.lock{overflow:hidden}
 }
 .review-form input:focus,.review-form textarea:focus{border-color:var(--gold)}
 .rate-pick{display:flex;gap:.3rem}
-.rate-pick button{font-size:1.4rem;color:rgba(29,22,16,.22);transition:.2s}
+.rate-pick button{font-size:1.4rem;color:rgba(13,13,13,.2);transition:.2s}
 .rate-pick button.on,.rate-pick button:hover{color:var(--gold)}
 .form-note{font-size:.7rem;letter-spacing:.1em;color:var(--taupe)}
 .review-list{display:grid;gap:1.4rem}
@@ -616,7 +616,7 @@ body.lock{overflow:hidden}
 .sum-total strong{font-family:var(--serif);font-size:1.7rem;color:var(--gold);font-weight:500}
 .ship-progress p{font-size:.8rem;color:var(--taupe);margin-bottom:.5rem}
 .ship-progress strong{color:var(--gold)}
-.bar{height:5px;background:rgba(29,22,16,.1);overflow:hidden}
+.bar{height:5px;background:rgba(13,13,13,.1);overflow:hidden}
 .bar span{display:block;height:100%;background:var(--gold);transition:width .5s ease}
 .ship-ok{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#4B7A52}
 .promo{display:flex;border:1px solid var(--line);background:var(--bone)}
@@ -810,7 +810,7 @@ body.lock{overflow:hidden}
   width:min(760px,100%);max-height:90vh;overflow:auto;
   display:grid;grid-template-columns:1fr 1fr;
   transform:translateY(20px) scale(.97);transition:.4s cubic-bezier(.2,1,.3,1);
-  box-shadow:0 30px 80px rgba(29,22,16,.28);
+  box-shadow:0 30px 80px rgba(0,0,0,.3);
 }
 .quick.open .quick-card{transform:none}
 .quick-x{position:absolute;top:.5rem;right:.9rem;z-index:3;font-size:1.7rem}
