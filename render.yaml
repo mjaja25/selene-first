@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: selene-jewellery
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .

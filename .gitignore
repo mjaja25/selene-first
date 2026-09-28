@@ -1,0 +1,18 @@
+# Binaries and local tools
+cloudflared.exe
+*.exe
+serve.bat
+tunnel.bat
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Scraping & design working files (optional, keeps repo light)
+_shots/
+selene_insta/
+__pycache__/
+*.pyc
